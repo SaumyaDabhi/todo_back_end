@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 const app =  express();
 
 const corsOptions ={
-    origin:'http://localhost:3000', 
+    origin:'https://todo-front-end-rho.vercel.app/', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
