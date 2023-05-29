@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from "cors";
+const PORT = process.env.PORT || 3000;
 
 const app =  express();
 
@@ -62,4 +63,4 @@ app.post('/todos/:id/completed', (req, res) => {
     }
 })
 
-app.listen(3001, ()=>{ console.log('Listening on port 3001') });
+app.listen(PORT, ()=>{ console.log(`Listening on port ${PORT}`) });
